@@ -1,0 +1,21 @@
+{
+    "root": true,
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "overrides": [
+      {
+        "files": ["src/**/*.ts", "src/**/*.tsx"],
+        "rules": {
+          "semi": ["error", "always"],
+          "quotes": ["error", "single"]
+        }
+      }
+    ],
+    "ignorePatterns": ["*.test.js", "*.stories.tsx"]
+}

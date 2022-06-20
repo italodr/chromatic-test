@@ -1,0 +1,9 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "types": ["jest", "node", "react", "react-dom", "@testing-library/jest-dom", "@types/testing-library__jest-dom"],
+    "allowJs": true,
+  },
+  "include": ["src/**/*.tsx", "src/**/*.ts"],
+}
