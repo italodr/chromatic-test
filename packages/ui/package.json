@@ -9,7 +9,8 @@
     "prebuild": "jest --json --outputFile=.jest-test-results.json || true",
     "build": "pnpm prebuild && build-storybook -c .storybook -o build",
     "storybook": "start-storybook -p 6006",
-    "test": "jest"
+    "test": "jest",
+    "chromatic": "chromatic --project-token=4b6317b90885 --storybook-build-dir=packages/ui/build --output-dir=packages/ui"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
