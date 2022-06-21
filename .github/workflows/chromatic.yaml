@@ -56,4 +56,8 @@ jobs:
               run: pnpm --filter ui install
 
             - name: Publish to Chromatic
-              run: pnpm --filter ui chromatic
+              uses: chromaui/action@v1
+              with:
+                projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+                storybookConfigDir: .storybook
+                buildScriptName: build

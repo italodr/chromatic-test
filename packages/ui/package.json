@@ -10,7 +10,7 @@
     "build": "pnpm prebuild && build-storybook -c .storybook -o build",
     "storybook": "start-storybook -p 6006",
     "test": "jest",
-    "chromatic": "chromatic --project-token=4b6317b90885 --storybook-build-dir=packages/ui/build --output-dir=packages/ui"
+    "chromatic": "chromatic --project-token=4b6317b90885 --storybook-build-dir=build --output-dir=packages/ui --exit-zero-on-changes --auto-accept-changes"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
